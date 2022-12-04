@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Find - PA e PG</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="header-logo">Find</h1>
+    <a data-menu-cores class="cores-menu" href="#"><img src="assets/img/tema.png" alt=""></a>
+    <ul data-lista-cores class="cores">
+      <li data-cor="1" class="primeira"></li>
+      <li data-cor="2" class="segunda ativo"></li>
+      <li data-cor="3" class="terceira"></li>
+    </ul>
+
+  </header>
+
+  <main class="cards">
+    <section class="cards-secao">
+      <h1 class="titulo-desktop">Progressão Aritimética</h1>
+      <h1 class="titulo-mobile">PA</h1>
+      <ul>
+        <li><a data-card="termo-pa" href="#">Termo da PA</a></li>
+        <li><a data-card="razao-pa" href="#">Razão da PA</a></li>
+        <li><a data-card="posicao-pa" href="#">Posição de um termo da PA</a></li>
+        <li><a data-card="soma-pa" href="#">Soma da PA</a></li>
+        <li><a data-card="medio-pa" href="#">Termo médio da PA</a></li>
+      </ul>
+    </section>
+    <section class="cards-secao">
+      <h1 class="titulo-desktop">Progressão Geométrica</h1>
+      <h1 class="titulo-mobile">PG</h1>
+      <ul>
+        <li><a data-card="termo-pg" href="#">Termo da PG</a></li>
+        <li><a data-card="primeiro-pg" href="#">Primeiro termo da PG</a></li>
+        <li><a data-card="razao-pg" href="#">Razão da PG</a></li>
+        <li><a data-card="soma-pg" href="#">Soma da PG</a></li>
+        <li><a data-card="soma-pg-i" href="#">Soma da PG Infinita</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  </section>
+  <article>
+    <section class="modal-container" data-modal="termo-pa">
+      <div class="modal">
+        <h1>Encontrar termo da PA</h1>
+        <form action="">
+
+          <label for="ax">Termo conhecido</label>
+          <input data-ax-termo-pa type="number" name="ax" id="ax">
+
+          <label for="n">Posição do termo que procura</label>
+          <input data-n-termo-pa type="number" name="n" id="n">
+
+          <label for="x">Posição do termo conhecido</label>
+          <input data-x-termo-pa type="number" name="x" id="x">
+
+          <label for="razao">Razão</label>
+          <input data-r-termo-pa type="number" name="razao" id="razao">
+
+          <button data-botao-termo-pa type="button">Encontrar</button>
+        </form>
+
+        <button data-modal="fechar-termo-pa" class="fechar">X</button>
+        <p data-resposta-termo-pa class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="razao-pa">
+      <div class="modal">
+        <h1>Encontrar razão da PA</h1>
+        <form action="">
+
+          <label for="ax">Último termo conhecido</label>
+          <input data-ax-razao-pa type="number" name="ax" id="ax">
+
+          <label for="an">Primeiro termo conhecido</label>
+          <input data-an-razao-pa type="number" name="an" id="an">
+
+          <label for="x">Posição do último termo</label>
+          <input data-x-razao-pa type="number" name="x" id="x">
+
+          <label for="n">Posição do primeiro termo</label>
+          <input data-n-razao-pa type="number" name="n" id="n">
+
+          <button data-botao-razao-pa type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-razao-pa" class="fechar">X</button>
+        <p data-resposta-razao-pa class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="posicao-pa">
+      <div class="modal">
+        <h1>Encontrar posição de um termo da PA</h1>
+        <form action="">
+
+          <label for="an">Termo que procura</label>
+          <input data-an-posicao-pa type="number" name="an" id="an">
+
+          <label for="ax">Termo conhecido</label>
+          <input data-ax-posicao-pa type="number" name="ax" id="ax">
+
+          <label for="razao">Razão</label>
+          <input data-r-posicao-pa type="number" name="razao" id="razao">
+
+          <label for="x">Posição do termo conhecido</label>
+          <input data-x-posicao-pa type="number" name="x" id="x">
+
+          <button data-botao-posicao-pa type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-posicao-pa" class="fechar">X</button>
+        <p data-resposta-posicao-pa class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="soma-pa">
+      <div class="modal">
+        <h1>Encontrar soma da PA</h1>
+
+        <form action="">
+          <label for="ax">Primeiro termo da soma</label>
+          <input data-ax-soma-pa type="number" name="ax" id="ax">
+
+          <label for="ay">Último termo da soma</label>
+          <input data-ay-soma-pa type="number" name="ay" id="ay">
+
+          <label for="n">Número de termos da soma</label>
+          <input data-n-soma-pa type="number" name="n" id="n">
+
+          <button data-botao-soma-pa type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-soma-pa" class="fechar">X</button>
+        <p data-resposta-soma-pa class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="medio-pa">
+      <div class="modal">
+        <h1>Termo médio de uma PA</h1>
+
+        <form action="">
+
+          <label for="sn">Soma dos termos da PA</label>
+          <input data-sn-medio-pa type="number" name="sn" id="sn">
+
+          <label for="n">Quantidade de termos da soma</label>
+          <input data-n-medio-pa type="number" name="n" id="n">
+
+          <button data-botao-medio-pa type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-medio-pa" class="fechar">X</button>
+        <p data-resposta-medio-pa class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="termo-pg">
+      <div class="modal">
+        <h1>Encontrar termo da PG</h1>
+
+        <form action="">
+          <label for="a1">Primeiro número da sequência</label>
+          <input data-a1-termo-pg type="number" name="a1" id="a1">
+
+          <label for="q">Coeficiente</label>
+          <input data-q-termo-pg type="number" autocomplete="off" name="q" id="q">
+
+          <label for="n">Posição do termo que você procura</label>
+          <input data-n-termo-pg type="number" name="n" id="n">
+
+          <button data-botao-termo-pg type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-termo-pg" class="fechar">X</button>
+        <p data-resposta-termo-pg class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="primeiro-pg">
+      <div class="modal">
+        <h1>Encontrar primeiro termo da PG</h1>
+
+        <form action="">
+          <label for="ax">Termo conhecido</label>
+          <input data-ax-primeiro-pg type="number" name="a1" id="a1">
+
+          <label for="q">Coeficiente</label>
+          <input data-q-primeiro-pg autocomplete="off" type="number" name="q" id="q">
+
+          <label for="n">Posição do termo conhecido</label>
+          <input data-n-primeiro-pg type="number" name="n" id="n">
+
+          <button data-botao-primeiro-pg type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-primeiro-pg" class="fechar">X</button>
+        <p data-resposta-primeiro-pg class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="razao-pg">
+      <div class="modal">
+        <h1>Coeficiente PG</h1>
+
+        <form action="">
+
+          <label for="an">Último elemento conhecido</label>
+          <input data-an-razao-pg type="number" name="an" id="an">
+
+          <label for="ax">Outro elemento conhecido</label>
+          <input data-ax-razao-pg type="number" name="ax" id="ax">
+
+          <label for="n">Posição do último elemento</label>
+          <input data-n-razao-pg type="number" name="n" id="n">
+
+          <label for="x">Posição do outro elemento</label>
+          <input data-x-razao-pg type="number" name="x" id="x">
+
+          <button data-botao-razao-pg type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-razao-pg" class="fechar">X</button>
+        <p data-resposta-razao-pg class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="soma-pg">
+      <div class="modal">
+        <h1>Encontrar soma da PG</h1>
+
+        <form action="">
+          <label for="a1">Primeiro termo da sequência</label>
+          <input data-a1-soma-pg type="number" name="a1" id="a1">
+
+          <label for="q">Coeficiente</label>
+          <input data-q-soma-pg autocomplete="off" type="number" name="q" id="q">
+
+          <label for="n">Quantidade de elementos</label>
+          <input data-n-soma-pg type="number" name="n" id="n">
+
+          <button data-botao-soma-pg type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-soma-pg" class="fechar">X</button>
+        <p data-resposta-soma-pg class="resposta"></p>
+      </div>
+    </section>
+
+    <section class="modal-container" data-modal="soma-pg-i">
+      <div class="modal">
+        <h1>Encontrar soma da PG infinita</h1>
+
+        <form action="">
+          <label for="a1">Primeiro termo da sequência</label>
+          <input data-a1-soma-pg-i type="number" name="a1" id="a1">
+
+          <label for="q">Coeficiente</label>
+          <input data-q-soma-pg-i autocomplete="off" type="number" name="q" id="q">
+
+          <button data-botao-soma-pg-i type="button">Encontrar</button>
+        </form>
+        <button data-modal="fechar-soma-pg-i" class="fechar">X</button>
+        <p data-resposta-soma-pg-i class="resposta"></p>
+      </div>
+    </section>
+
+  </article>
+
+  <footer class="footer">
+    <p>Find PA e PG © Direitos reservados. <span>Desenvolvido por Abelardo Júnior</span></p>
+    <div class="contatos">
+      <a class="contatos-item" href="https://www.linkedin.com/in/abelardo-junior/" target="_blank"><img src="assets/img/linkedin.png" alt=""></a>
+      <a class="contatos-item" href="https://github.com/abelardojr0" target="_blank"><img src="assets/img/github.png" alt=""></a>
+      </ul>
+  </footer>
+  <script type="module" src="assets/js/script.js"></script>
+</body>
+
+</html>

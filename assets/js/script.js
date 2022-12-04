@@ -1,0 +1,23 @@
+import termoPa from "./modules/termo-pa.js";
+import razaoPa from "./modules/razao-pa.js";
+import posicaoTermoPa from "./modules/posicao-pa.js";
+import somaPa from "./modules/soma-pa.js";
+import medioPa from "./modules/medio-pa.js";
+import termoPg from "./modules/termo-pg.js";
+import primeiroPg from "./modules/primeiro-pg.js";
+import razaoPg from "./modules/razao-pg.js";
+import somaPg from "./modules/soma-pg.js";
+import somaPgI from "./modules/soma-pg-i.js";
+import temaCores from "./modules/cores.js";
+
+termoPa();
+razaoPa();
+posicaoTermoPa();
+somaPa();
+medioPa();
+termoPg();
+primeiroPg();
+razaoPg();
+somaPg();
+somaPgI();
+temaCores();

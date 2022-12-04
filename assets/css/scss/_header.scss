@@ -1,0 +1,113 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.cores-menu {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+  img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    transform: scale(1);
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    @include d(m) {
+      width: 30px;
+      height: 30px;
+    }
+    @include d(g) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  @include d(m) {
+    right: 20px;
+    top: 20px;
+  }
+  @include d(g) {
+    right: 30px;
+    top: 30px;
+  }
+}
+.cores {
+  display: none;
+  position: absolute;
+  gap: 5px;
+  right: 53px;
+  top: 10px;
+  @include d(m) {
+    right: 60px;
+    top: 20px;
+  }
+  @include d(g) {
+    right: 90px;
+    top: 30px;
+  }
+  li {
+    border-radius: 50%;
+    &.ativo {
+      border: 1px solid $corPrincipal;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    @include d(m) {
+      width: 35px;
+      height: 35px;
+    }
+    @include d(g) {
+      width: 40px;
+      height: 40px;
+    }
+    &.primeira {
+      background-image: url(../img/primeira.png);
+    }
+    &.segunda {
+      background-image: url(../img/segunda.png);
+    }
+    &.terceira {
+      background-image: url(../img/terceira.png);
+    }
+  }
+}
+.cores.ativo {
+  display: flex;
+}
+
+.infos-menu {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  transform: scale(1);
+  transition: 0.5s;
+  img {
+    max-width: 60px;
+  }
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.header-logo {
+  @include fonteTitulo(grande);
+  @include d(m) {
+    font-size: 8rem;
+  }
+  @include d(g) {
+    font-size: 10rem;
+  }
+}

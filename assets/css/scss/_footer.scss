@@ -1,0 +1,43 @@
+.footer {
+  @include fundoTransparente(card);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p {
+    @include fontePrincipal(pequeno1);
+    font-style: italic;
+  }
+  span {
+    display: block;
+    color: $corSecundaria;
+    @include fontePrincipal(pequeno0);
+    margin-top: 5px;
+  }
+  @include d(m) {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  @include d(g) {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.contatos {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  img {
+    width: 30px;
+    max-width: 100%;
+    transform: scale(1);
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

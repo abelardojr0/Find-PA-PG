@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  position: relative;
+  background: $fundoPrincipal;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: $corPrincipal;
+}
