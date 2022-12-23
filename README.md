@@ -1,5 +1,7 @@
 # :star: Find
 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
+
 ![logo-find](https://user-images.githubusercontent.com/106066785/209373291-2971c63a-e18b-450f-b1e8-0a7e969e1d6b.png)
 
 
