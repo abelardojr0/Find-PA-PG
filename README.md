@@ -19,13 +19,7 @@ Projeto 100% responsivo!
 ## :iphone: Versão Mobile:
 ![find-mobile](https://user-images.githubusercontent.com/106066785/209373592-3799bb08-4116-4300-b172-22135967801f.png)
 
-# :hammer: Funcionalidades do Projeto
-
-- `Funcionalidade 1`: Cálculos
-- `Funcionalidade 2`: Modais
-
-
-# :pushpin: Projeto em Execução
+# :hammer: Projeto em Execução
 
 https://user-images.githubusercontent.com/106066785/209374012-82879b29-e53a-420d-9cf8-388865fd2323.mp4
 
